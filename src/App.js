@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import UseCallback from './UseCallback';
+import UserContextExample from './UseContext';
+import { ArrayDepMount, BasicEffect, EffectCleanup } from './UseEffect';
+import UseLayoutEffect from './UseLayoutEffect';
+import UseMemo from './UseMemo';
+import UserReducerBar from './UserReducer';
+import UseState from './UseState';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <UseState />
+      <hr />
+      <BasicEffect />
+      <hr />
+      <EffectCleanup />
+      <hr />
+      <ArrayDepMount />
+      <hr />
+      <UserContextExample />
+      <hr />
+      <UseLayoutEffect />
+      <hr />
+      <UserReducerBar />
+      <hr />
+      <UseCallback />
+      <hr />
+      <UseMemo />
     </div>
   );
 }
